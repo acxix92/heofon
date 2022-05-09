@@ -2,11 +2,11 @@
   "name": "heofon",
   "version": "1.0.0",
   "description": "",
-  "main": "./app/index.html",
+  "main": "./app/index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+    "build:parcel": "parcel build src/app/index.js --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
   "repository": {
