@@ -1,8 +1,4 @@
-# Rock the Stage with a Smooth WebGL Shader Transformation on Scroll
-
-A handy setup to create a smooth scroll based GLSL animation using Three.js and GSAP.
-
-
+###HEOFON
 ## Installation
 
 Install dependencies:
