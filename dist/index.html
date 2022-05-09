@@ -1,1 +1,474 @@
-<!DOCTYPE html><html lang="en" class="no-js"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Shaders on Scroll | Codrops</title><meta name="description" content="Smooth WebGL Shader Transformations on Scroll – A handy setup to create a smooth scroll based GLSL animation using Three.js and GSAP. @Faboolea"><meta name="keywords" content="webgl, three.js, on scroll, animation, three.js, gsap, javascript"><meta name="author" content="ꜰᴀʙᴏᴏʟᴇᴀ for Codrops"><link rel="icon shortcut" href="favicon.61719396.ico"><link rel="stylesheet" type="text/css" href="index.47c52c93.css"><link rel="stylesheet" type="text/css" href="index.9fc08b13.css"><script>!function(){document.documentElement.className="js";var e,t;(t=document.createElement("style")).innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e||alert("Please view this demo in a modern browser that supports CSS Variables.")}();</script></head><body class="loading"> <main> <div class="frame"> <div class="frame__title-wrap"> <h1 class="frame__title">Smooth WebGL Shader Transformations on Scroll</h1> </div> <nav class="frame__links"> <a href="https://tympanus.net/Tutorials/MarqueeMenu/">Previous demo</a> <a href="https://tympanus.net/codrops/?p=55223">Article</a> <a href="https://github.com/Faboolea/shaders-on-scroll">GitHub</a> </nav> </div> <div class="content"> <div class="scroll__stage"> <div class="scroll__content"> <section class="section"> <div class="section__title"> <h1 class="section__title-number">01</h1> <h2 class="section__title-text">Logma</h2> <p class="section__title-arrow"> <span>➤</span><br> <span>➤</span> </p> </div> <p class="section__paragraph"> The fireball that we rode was moving – But now we've got a new machine – They got music in the solar system<br> <a href="https://dimorph.ch/" class="section__button">Discover</a> </p> </section> <section class="section"> <div class="section__title"> <h1 class="section__title-number">02</h1> <h2 class="section__title-text">Naos</h2> </div> <p class="section__paragraph"> Let me take you on a little trip – We're gonna travel faster than light – And you'll go anywhere you want to decide<br> <a href="https://dimorph.ch/" class="section__button">Discover</a> </p> </section> <section class="section"> <div class="section__title"> <h1 class="section__title-number">03</h1> <h2 class="section__title-text">Chara</h2> </div> <p class="section__paragraph"> Close your eyes now – And give in to the night – Soar above the stars – Forget what's behind<br> <a href="https://dimorph.ch/" class="section__button">Discover</a> </p> </section> </div> </div> <div class="layout__line"></div> <div class="layout__faboolea"><a class="layout__faboolea-link" href="https://twitter.com/faboolea">Made by &nbsp; ꜰᴀʙᴏᴏʟᴇᴀ</a></div> </div> </main> <script src="index.33763982.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HEOFON</title>
+		<meta name="description" content="HEOFON">
+		<meta name="keywords" content="webgl, three.js, on scroll, animation, three.js, gsap, javascript">
+		<meta name="author" content="TK">
+		<!-- <link rel="shortcut icon" href="#"> -->
+		<link rel="stylesheet" type="text/css" href="/index.275a8ed3.css">
+		<link rel="stylesheet" type="text/css" href="/index.ea6ffa38.css">
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title near-white">Discover Economic Freedom</h1>
+				</div>
+				<nav class="frame__links">
+					<!-- <a href="#">link</a>
+					<a href="#">link</a>
+					<a href="#">link</a> -->
+				</nav>
+			</div>
+			<div class="content z-999">
+				<div class="scroll__stage">
+					<div class="scroll__content">
+						<section class="section">
+							<div class="section__title">
+								<!-- <h1 class="section__title-number"></h1>
+								<h2 class="section__title-text">HEOFON</h2> -->
+								<img src="/heofon_white.61f48df2.png" class="w-100 f2 f3-m measure z-999" alt="HEOFON">
+								<!-- <p class="section__title-arrow">
+									<span>•</span><br>
+									<span>•</span>
+								</p> -->
+							</div>
+							<p class="section__paragraph near-white">
+								CREATING COMMUNITY TO BUILD A BETTER TOMORROW<br>
+							</p>
+						</section>
+						<section class="section">
+							<div class="section__title">
+								<p class="f1-ns f3 fw8 white">WHAT IS HEOFON?</p>
+								<!-- <h2 class="">TK</h2> -->
+							</div><br>
+							<p class="near-white w-50 measure lh-copy f2-ns f4 ">
+								HEOFON is National CORE's response to growing beyond our current world by preparing for the next 30 years of our mission. By developing internal solutions for our teams and preparing for the opportunity of web3 and the future of fundraising. National Core has the opportunity to set the standard for non-profits and control our own path towards the future.<br>
+								<!-- <a href="#" class="section__button">Discover</a> -->
+							</p>
+						</section>
+						<section class="section">
+							<div class="section__title">
+								<p class="w-50 f1-ns f3 fw8 white">HOW IS NATIONAL CORE PREPARING FOR AN EFFICIENT WEB2?</p>
+								<!-- <h2 class="">TK</h2> -->
+							</div>
+							<div class="section__paragraph">
+								<div class="flex flex-column">
+									<div class="js-modal-trigger no-underline white bg-animate hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer" data-target="internalApp">
+										<p>Internal Operation Management Platform</p>
+									   </div>
+									   
+									   <div class="js-modal-trigger no-underline white bg-animate hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer" data-target="propertyMang">
+										<p>Property Management Platform</p>
+									   </div>
+									   <div class="js-modal-trigger no-underline white bg-animate hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer" data-target="hope">
+										<p>Hope Through Housing Foundation App</p>
+									   </div>
+									</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__title">
+								<p class="f1-ns f3 fw8 white">WHY IT MATTERS?</p>
+								<!-- <h2 class="">TK</h2> -->
+							</div>
+							<div class="">
+								<div class="flex flex-column">
+								
+									<div class="pa4 bg-black">
+										<div class=" ml0 mt0 pl3 bl bw2 b--blue">
+										  <p class="f5 f4-m f2-l lh-copy measure mt0 white">
+											DATA EFFICIENCY
+										  </p>
+										</div>
+									   </div>
+									   <div class="pa4 bg-black">
+										<div class=" ml0 mt0 pl3 black-90 bl bw2 b--blue">
+										  <p class="f5 f4-m f2-l lh-copy measure mt0 white">
+											DATA CONTROL
+										  </p>
+										</div>
+									   </div>
+									   <div class="pa4 bg-black">
+										<div class="ml0 mt0 pl3 black-90 bl bw2 b--blue">
+										  <p class="f5 f4-m f2-l lh-copy measure mt0 white">
+											DATA INTEGRITY
+										  </p>
+										</div>
+									   </div>
+								   </div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__title">
+								<p class="w-50 lh-title f-headline tc center f1-ns f3 fw8 white">HOW IS NATIONAL CORE PREPARING FOR THE FUTURE OF WEB3?</p>
+								
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__title">
+								<div class="flex flex-column">
+									<div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="econ">
+										<p>ECONOMIC FREEDOM</p>
+									   </div>
+									   
+									   <div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="whatEcon">
+										<p>WHAT IS ECONOMIC FREEDOM?</p>
+									   </div>
+									   <div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="vid">
+										<p>VIDEO</p>
+									   </div>
+									</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__title">
+								<div class="flex flex-wrap">
+									<div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="cryptoDonation">
+										<p>CRYPTO DONATIONS</p>
+									   </div>
+									   
+									   <div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="nft">
+										<p>NFT</p>
+									   </div>
+									   <div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="metaV">
+										<p>METAVERSE</p>
+									   </div>
+									   <div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="token">
+										<p>TOKENOMICS</p>
+									   </div>
+									   <div class="js-modal-trigger no-underline white bg-animate bg-black hover-bg-white hover-near-black inline-flex items-center pv4 ph4 ba border-box pointer f4 f2-ns" data-target="carb">
+										<p>CARBON NUETRAL</p>
+									   </div>
+									</div>
+							</div>
+						</section>
+
+						<section class="section">
+							<div class="section__title">
+								<p class="w-100 lh-title f-headline tc center f1-ns f3 fw8 white">CREATING A BETTER FUTURE.<br>TOGETHER. <br>HEOFON.</p>
+								
+							</div>
+						</section>
+						
+						
+					</div>
+				</div>
+				<div class="layout__line"></div>
+			
+			</div>
+		</main>
+
+		<!--Modal items-->
+		<div div="" id="internalApp" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <p class="f4 f2-ns measure-narrow title-heading fw9 tc white tracked-tight">Internal Operation Management Application</p>
+					  <br>
+					   <article class="mw5 center br3 pa3 pa4-ns mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Communication Repository</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 pa4-ns mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Corporate Calendar</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 pa4-ns mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Personalized and Automated Marketing Tools</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 pa4-ns mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Custom Scheduling Functions for Internal Teams</h1>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="propertyMang" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <p class="f4 f2-ns measure-narrow title-heading fw9 tc white tracked-tight">Property Management</p>
+					  <br>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Eliminate Manual Lease Reviews</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Automate Document Uploads</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Online Payment Solutions</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Create Schedule and Calendar Push Notifications through Mobile Application</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Build Tenant Profiles</h1>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="hope" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <p class="f4 f2-ns measure-narrow title-heading fw9 tc white tracked-tight">Hope Through Housing Foundation</p>
+					  <br>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Consolidate all Donors and Partners into One Platform</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Streamline Communication to Donors, Partners, and Residents</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Build in Resident Opportunity and Incentivization</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Provide Education through Mobile Integration and Push Notifications</h1>
+						</div>
+					   </article>
+					   <article class="mw5 center br3 pa3 mv3 ba b--black-10">
+						<div class="tc">
+						  <h1 class="f3 pa1 lh-title white">Robust Donation Platform</h1>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="econ" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <p class="f4 f2-ns measure-narrow title-heading fw9 tc white tracked-tight">ECONOMIC FREEDOM</p>
+					  <br>
+					  <blockquote class="ph0 f4 f2-ns measure-narrow tc center white">
+						<p class="fw7 lh-copy pa2">Economic freedom is the fundamental right of every human to control his or her own labor and
+							property. In an economically free society, individuals are free to work, produce, consume, and
+							invest in any way they please.
+							Coinbase: It is the largest cryptocurrency exchange in the United States by trading volume. 27
+							billion Dollar Market Cap (can we link this with a livestock ticker?)
+							
+						</p>
+					   </blockquote>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="whatEcon" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <p class="f4 f2-ns measure-narrow title-heading fw9 tc white tracked-tight">WHAT IS ECONOMIC FREEDOM?</p>
+					  <br>
+					  <div class="pa4">
+						<a href="https://blog.coinbase.com/how-crypto-enables-economic-freedom-7dee35d8f0e0" target="_blank"><blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--pink link dim">
+						  <p class="f5 f4-m f3-l lh-copy measure mt0 white">
+							Technology is the longest lever we can pull to improve the human condition. At its core, cryptocurrency is a technology breakthrough that allows us to build a more free and open financial system that enables the rights of people to control their own labor and property. It is the best tool that exists to advance our mission of increasing economic freedom in the world.
+						  </p>
+						  <cite class="f6 ttu tracked fs-normal white pt4">―Brian Armstrong | Co-Founder and CEO</cite>
+						</blockquote></a>
+					   </div>
+
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="vid" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <!-- <p class="f4 f2-ns measure-narrow title-heading fw9 tc center white tracked-tight">WHAT IS ECONOMIC FREEDOM?</p> -->
+					  <br>
+					  <div class="pa5 tc">
+						<iframe width="600" height="315" src="https://www.youtube.com/embed/HQaegigv6jU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					   </div>
+
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="cryptoDonation" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <!-- <p class="f4 f2-ns measure-narrow title-heading fw9 tc white tracked-tight">CRYPTO DONATIONS</p> -->
+					  <article class="center mw5 mw6-ns hidden ba mv4">
+						<h1 class="f3 bg-near-black white mv0 pv2 ph3">CRYPTO DONATIONS</h1>
+						<div class="pa3 bt">
+						  <p class="f4 f3-ns lh-copy measure mv0 white fw5">
+							We will help you build a new network of donors. We will add the capability of accepting crypto
+							donations through new donor vehicles; Hope through Housing and now HEOFON.
+						  </p><br><p class="f3 fw3 white">
+							- Crypto donations surpassed $500M in 2021<br>
+							- Fidelity Charitable alone received $331M in crypto last year — a 12X increase from 2020<br>
+							- Example: In 2019, UNICEF became the first UN organization to receive, hold, and
+							redistribute cryptocurrency. Since then, the UNICEF CryptoFund has received eight
+							Bitcoin and a whopping 2527 Ethereum, making investments in startups in developing
+							and emerging countries.<br> For example, the UNICEF CryptoFund invested 25 ETH in an
+							emergency response platform in Kenya, nearly 20 ETH in an AI and blockchain-powered
+							startup in Argentina, and nearly 12 ETH in digital financial services for refugees in
+							Rwanda.
+							
+						  </p>
+						</div>
+					   </article>
+					   
+					   
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="nft" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <article class="center mw5 mw9-ns hidden ba mv4">
+						<h1 class="f3 bg-near-black white mv0 pv2 ph3">NFT</h1>
+						<div class="pa3 bt">
+						  <p class="f4 f3-ns lh-copy measure mv0 white fw5">
+							We want to build the next generation of donations through our NFT marketplace on HEOFON.
+							We will build our crypto community, allowing you to leverage your mission, inspiring your
+							residents, donors and broaden our crypto market through digital art.</p>
+							<br>
+							<p class="f3 fw3 white">
+							- Partner with notable NFT artists to leverage HEOFON<br>
+							- Allow NFT artists to upload their NFTs on our platform<br>
+							- Create opportunities for residents to upload their art for the world to enjoy
+						  </p>
+						  <br>
+						  <iframe class="w-100 vh-100" src="https://nonfungible.com/market-tracker?days=9007199254740991"></iframe>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="metaV" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <article class="center mw5 mw6-ns hidden ba mv4">
+						<h1 class="f3 bg-near-black white mv0 pv2 ph3">METAVERSE</h1>
+						<div class="pa3 bt">
+						  <p class="f4 f3-ns lh-copy measure mv0 white fw5">
+							As we begin to integrate our donors, partners, residents, and the world into our mission, we will continue to develop our crypto footprint by developing our own METAVERSE properties. Through these properties we will build:</p>
+							<br>
+							<p class="f3 fw3 white">
+							- Play-to-earn video games<br>
+							- Banking Systems<br>
+							- Educational Games<br>
+							-Provide a safe space for residents to learn and grow
+						  </p>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="token" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <article class="center mw5 mw6-ns hidden ba mv4">
+						<h1 class="f3 bg-near-black white mv0 pv2 ph3">TOKENOMICS</h1>
+						<div class="pa3 bt">
+						  <p class="f4 f3-ns lh-copy measure mv0 white fw5">
+							As we grow adoption through our NFTs and Metaverse properties, we will create utility tokens that can be earned through National CORE, Hope through Housing Foundation, our Metaverse, and NFT marketplace for residents and enthusiasts to earn. Imagine a membership token for our residents to get discounted products in the real world?
+						  </p>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+		   <div id="carb" class="modal">
+			<div class="modal-background">
+			<div class="modal-content pt6">
+					  <article class="center mw5 mw6-ns hidden ba mv4">
+						<h1 class="f3 bg-near-black white mv0 pv2 ph3">CARBON NEUTRAL</h1>
+						<div class="pa3 bt">
+						  <p class="f4 f3-ns lh-copy measure mv0 white fw5">
+							While cryptocurrency and its advancements are continuing to develop, we will ensure to use carbon neutral protocols for all our developments to keep a zero-carbon footprint.
+						  </p>
+						</div>
+					   </article>
+					   <button class="modal-close is-large" aria-label="close"></button>
+					</div>
+			</div>
+		   </div>
+
+
+		   <script>document.addEventListener('DOMContentLoaded', ()=>{
+    // Functions to open and close a modal
+    function openModal($el) {
+        $el.classList.add('is-active');
+    }
+    function closeModal($el) {
+        $el.classList.remove('is-active');
+    }
+    function closeAllModals() {
+        (document.querySelectorAll('.modal') || []).forEach(($modal)=>{
+            closeModal($modal);
+        });
+    }
+    // Add a click event on buttons to open a specific modal
+    (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger)=>{
+        const modal = $trigger.dataset.target;
+        const $target = document.getElementById(modal);
+        $trigger.addEventListener('click', ()=>{
+            openModal($target);
+        });
+    });
+    // Add a click event on various child elements to close the parent modal
+    (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close)=>{
+        const $target = $close.closest('.modal');
+        $close.addEventListener('click', ()=>{
+            closeModal($target);
+        });
+    });
+    // Add a keyboard event to close all modals
+    document.addEventListener('keydown', (event)=>{
+        const e = event || window.event;
+        if (e.keyCode === 27) closeAllModals();
+    });
+});
+
+</script>
+		<script src="/index.cb43b74a.js" defer=""></script>
+
+	</body>
+</html>

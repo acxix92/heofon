@@ -39,28 +39,28 @@ class ScrollStage {
       // vertex
       uFrequency: {
         start: 0,
-        end: 4
+        end: 2
       },
       uAmplitude: {
-        start: 4,
-        end: 4
-      },
-      uDensity: {
-        start: 1,
+        start: 2,
         end: 1
       },
+      uDensity: {
+        start: 3,
+        end: 3
+      },
       uStrength: {
-        start: 0,
-        end: 1.1
+        start: 1,
+        end: .5
       },
       // fragment
       uDeepPurple: {  // max 1
-        start: 1,
-        end: 0
+        start: 4,
+        end: 4
       },
       uOpacity: {  // max 1
-        start: .1,
-        end: .66
+        start: 0,
+        end: 0.4
       }
     }
 
@@ -265,4 +265,4 @@ class ScrollStage {
 
 new ScrollStage()
 
-console.log('%c Made by ꜰᴀʙᴏᴏʟᴇᴀ → https://twitter.com/faboolea', 'background: black; color: white; padding: 1ch 2ch; border-radius: 2rem;')
+

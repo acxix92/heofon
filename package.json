@@ -1,8 +1,8 @@
 {
-  "name": "shaders-on-scroll",
+  "name": "heofon",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
+  "main": "./app/index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
@@ -11,12 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Faboolea/shaders-on-scroll"
+    "url": "git://github.com/acxix92/heofon"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@parcel/transformer-glsl": "^2.5.0",
+    "@parcel/transformer-sass": "^2.5.0",
     "parcel": "latest"
   },
   "dependencies": {

@@ -130,6 +130,7 @@ a:focus-visible {
 	height: calc(100vh - 13rem);
 }
 
+
 @media screen and (min-width: 53em) {
 	.frame {
 		position: fixed;
@@ -181,3 +182,4 @@ a:focus-visible {
 		height: 100vh;
 	}
 }
+

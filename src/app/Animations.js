@@ -40,7 +40,7 @@ export default class {
       ], {
           y: -100,
           autoAlpha: 0,
-          stagger: .2,
+          stagger: .4,
           duration: 1.6
       }, '<.3')
     }
